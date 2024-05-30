@@ -1,0 +1,95 @@
+body {
+  background: url("https://static.sadhguru.org/d/46272/1633199491-1633199490440.jpg")
+    no-repeat center/cover;
+  height: 100vh;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+.counter {
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  align-items: center;
+  background: #fff2;
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+input {
+  width: 200px;
+  height: 50px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  outline: none;
+  border: 1px solid black;
+  color: white;
+  font-size: 35px;
+  border-radius: 10px;
+}
+
+.plus__btn {
+  background: green;
+  border-color: green;
+}
+
+.minus__btn {
+  background: red;
+  border-color: red;
+}
+
+.reset__btn {
+  background: yellow;
+  border-color: yellow;
+}
+
+.top {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.result__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  width: 200px;
+  height: 50px;
+  color: black;
+  background: pink;
+  border-radius: 10px;
+}
+
+.plus,
+.minus,
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.disabled {
+  color: black;
+  border-color: gray;
+  background: gray;
+  cursor: no-drop;
+}
