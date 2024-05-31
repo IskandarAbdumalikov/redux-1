@@ -1,24 +1,28 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  value: 0,
+  value: localStorage.getItem("counter") || 0,
 };
 
 export const counterSlice = createSlice({
   name: "counter",
   initialState,
   reducers: {
-    increment: (state,action) => {
+    increment: (state, action) => {
       state.value += action.payload;
+      localStorage.setItem("counter", state.value);
     },
-    decrement: (state,action) => {
+    decrement: (state, action) => {
       state.value -= action.payload;
+      localStorage.setItem("counter", state.value);
     },
     reset: (state) => {
       state.value = 0;
+      localStorage.setItem("counter", state.value);
     },
     incrementByAmount: (state, action) => {
       state.value += action.payload;
+      localStorage.setItem("counter", state.value);
     },
   },
 });
